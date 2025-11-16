@@ -35,7 +35,7 @@ clear      - clear terminal `;
         'clear': () => {
             terminalContent.innerHTML = `
                 <div class="line">
-                    <span class="prompt">C:\\Users\\guest></span>
+                    <span class="prompt">antimatter@antimatter137.dev:/$ </span>
                     <span class="command" id="current-line" contenteditable="true"></span>
                     <span class="placeholder">type help for commands</span>
                 </div>
@@ -113,7 +113,7 @@ clear      - clear terminal `;
         } else {
             const commandDiv = document.createElement('div');
             commandDiv.className = 'line';
-            commandDiv.innerHTML = `<span class="prompt">C:\\Users\\guest></span><span class="command-text">${currentCommand}</span>`;
+            commandDiv.innerHTML = `<span class="prompt">antimatter@antimatter137.dev:/$ </span><span class="command-text">${currentCommand}</span>`;
             
             const lastLine = terminalContent.lastElementChild;
             terminalContent.removeChild(lastLine);
@@ -139,7 +139,7 @@ clear      - clear terminal `;
             const newLine = document.createElement('div');
             newLine.className = 'line';
             newLine.innerHTML = `
-                <span class="prompt">C:\\Users\\guest></span>
+                <span class="prompt">antimatter@antimatter137.dev:/$ </span>
                 <span class="command" id="current-line" contenteditable="true"></span>
                 <span class="placeholder">type help for commands</span>
             `;
@@ -194,7 +194,7 @@ clear      - clear terminal `;
 const DISCORD_USER_ID = '1202358603940634688';
 
 const statusIndicator = document.getElementById('discord-status');
-const profileImageBorder = document.getElementById('profile-image-border'); // <-- ADD THIS LINE
+const profileImageBorder = document.getElementById('profile-image-border');
 
 function updateDiscordStatus(status) {
     
@@ -256,5 +256,6 @@ function connectLanyard() {
         socket.close();
     };
 }
+
 
 connectLanyard();
