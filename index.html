@@ -1,52 +1,66 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#000000">
-    <meta name="description" content="Antimatter137">
-    <meta property="twitter:image" content="/social-image.png">
-    <meta property="og:image" content="/social-image.png">
-    <title>Antimatter's Profile</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Custom CSS for profile picture -->
-    <style>
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 5px solid #ffffff;
-            margin-bottom: 20px;
-        }
-    </style>
-    <script>
-        window.addEventListener("load", (event) => {
-  new cursoreffects.ghostCursor();
-});
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antimatter</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <noscript class="sf-hidden">You need to enable JavaScript to run this app!</noscript>
-    <div id="home" class="title bg-transparent bgstyle text-light min-vh-100 d-flex align-content-center align-items-center flex-wrap m-0 jumbotron jumbotron-fluid" style="overflow:hidden;background:rgba(0,0,0,0) linear-gradient(136deg, rgb(68,132,206), rgb(26,215,192), rgb(255,155,17), rgb(155,89,182), rgb(255,127,127), rgb(236,240,241)) repeat scroll 0% 0% / 1200% 1200%;">
-        <div id="stars"></div>
-        <div class="text-center container">
-            <img src="cropped_image.png" alt="Antimatter137's Profile Picture" class="profile-pic">
-            <h1 class="display-1">Antimatter137</h1>
-            <div class="Typist lead typist">I'm Antimatter137, a guy who likes to exploit Chromebooks and is interested in Bitcoin. I know <i class="fas fa-terminal"></i> Bash, <i class="fab fa-html5"></i> HTML5, and I am learning <i class="fab fa-python"></i> Python.</div>
-            <div class="p-5">
-                <a target="_blank" rel="noopener noreferrer" aria-label="Animatter's Github" href="https://github.com/Antimatter137"><i class="fab fa-github fa-3x socialicons"></i></a>
-                <a target="_blank" rel="noopener noreferrer" aria-label="Animatter's Calculator" href="https://calculator.antimatter137.dev"><i class="fas fa-solid fa-calculator fa-3x socialicons"></i></a>
-                <a target="_blank" rel="noopener noreferrer" aria-label="Animatter's Email" href="mailto:antimatter137@gmail.com"><i class="fas fa-envelope fa-3x socialicons"></i></a> 
-                <a target="_blank" rel="noopener noreferrer" aria-label="Animatter's Discord" href="https://discord.com/users/1202358603940634688"><i class="fab fa-discord fa-3x socialicons"></i></a> 
-          <!--       <a target="_blank" rel="noopener noreferrer" aria-label="Animatter's YouTube" href="https://gitlab.com/codeguy271"><i class="fab fa-gitlab fa-3x socialicons"></i></a> -->
+<!--ooooh particles -->
+    <div id="particles-js"></div>
+
+    <div class="container">
+        <div class="card">
+            <div class="profile-header">
+                <div class="profile-image status-offline" id="profile-image-border">
+                    <img src="favicon.png" alt="Profile">
+                </div>
+                <div class="online-indicator status-offline" id="discord-status"></div>
             </div>
-            <a class="btn btn-outline-light btn-lg" role="button" aria-label="Filehost" href="https://dl.antimatter137.dev" target="_blank">Filehost</a>
-            <a target="_blank" class="btn btn-outline-light btn-lg" role="button" aria-label="Game rules" href="https://domination.antimatter137.dev" style="margin-left: 10px;">Game Rules</a>
+
+            <div class="profile-content">
+                <h2>Antimatter</h2>
+                <p class="title">i used to do chrome os, i know html, css, js, bash, and python and want to learn java, and ive worked on/am working on my home server, multiple websites, and my 2 cats :)</p>
+<!-- i need more... -->
+                <div class="social">
+                    <a href="https://github.com/@antimatter137"><i class="fab fa-github"></i></a>
+                    <a href="mailto:antimatter137@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://discord.com/users/1202358603940634688"><i class="fab fa-discord"></i></a>
+                </div>
+<!-- email twice, yay -->
+                <a href="mailto:antimatter137@gmail.com" class="contact-btn">Contact</a>
+            </div>
+        </div>
+
+        <div class="terminal">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="terminal-button close"></span>
+                    <span class="terminal-button minimize"></span>
+                    <span class="terminal-button maximize"></span>
+                </div>
+                <div class="terminal-title">Command Prompt</div>
+            </div>
+                <div class="terminal-content" id="terminal-content">
+                    <div class="line">
+                        <span class="prompt">C:\Users\guest></span>
+                        <span class="command" id="current-line" contenteditable="true"></span>
+                        <span class="placeholder">type help for commands :)</span>
+                    </div>
+                </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="particles.js"></script>
+<footer>
+    Made with <i class="fas fa-heart"></i> by Antimatter
+</footer>
+    
 </body>
 </html>
