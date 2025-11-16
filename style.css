@@ -11,6 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 #particles-js {
@@ -336,11 +337,6 @@ h2 {
         width: 100%;
         max-width: 300px;
     }
-
-    footer {
-        position: static;
-        margin-top: 20px;
-    }
 }
 
 @media (max-width: 440px) {
@@ -374,13 +370,13 @@ h2 {
 }
 /* its the end!! */
 footer {
-    position: fixed;
+    position: static;
     bottom: 0;
     left: 0;
     width: 100%;
     text-align: center;
     padding: 15px;
-    color: #666; /* Faded text color */
+    color: #666;
     font-size: 0.9rem;
-    z-index: 10; /* Sits on top of the particles */
+    z-index: 10;
 }
