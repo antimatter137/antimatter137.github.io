@@ -2,9 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cats</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cats!!</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div id="particles-js"></div>
+<h1>my cat pictures</h1>
 
+<div class="gallery">
+    <div class="gallery-item">
+        <img src="assets/cat.png"
+             alt="my first cat" onclick="openZoom(this)">
+        <p>My first cat</p>
+    </div>
+    <div class="gallery-item">
+        <img src="assets/cat1.png"
+             alt="my second cat" onclick="openZoom(this)">
+        <p>My second cat</p>
+    </div>
+    <div class="gallery-item">
+        <img src="assets/cat2.png"
+             alt="my first cat again" onclick="openZoom(this)">
+        <p>first cat again</p>
+    </div>
+    <div class="gallery-item">
+        <img src="assets/cat3.png"
+             alt="my second cat again" onclick="openZoom(this)">
+        <p>second cat again</p>
+    </div>
+    /* i will add more */
+</div>
+
+<div id="zoom" class="zoom">
+    <img class="zoom-content" id="zoom-img">
+</div>
+
+<footer>Made with love by Antimatter</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
