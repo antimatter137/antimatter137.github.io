@@ -18,7 +18,8 @@ email      - contact me with ur email
 discord    - my discord profile
 github     - my GitHub profile
 whoami     - show current user
-clear      - clear terminal `;
+clear      - clear terminal 
+cats       - shows my 2 cats`;
         },
         'projects': () => {
             return `Current Projects:
@@ -59,7 +60,11 @@ clear      - clear terminal `;
         },
         'whoami': () => {
             return 'antimatter137';
-        }
+        },
+        'cats': () => {
+            window.open('https://antimatter137.dev/cats', '_blank');
+            return 'Opening cat pics...';
+        },
     };
 
     document.addEventListener('click', (e) => {
