@@ -65,6 +65,9 @@ cats       - shows my 2 cats`;
             window.open('https://antimatter137.dev/cats', '_blank');
             return 'Opening cat pics...';
         },
+        'fuck': () => {
+            return 'FUCK YOU!';
+        },
     };
 
     document.addEventListener('click', (e) => {
@@ -264,3 +267,4 @@ function connectLanyard() {
 
 
 connectLanyard();
+
