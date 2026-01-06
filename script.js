@@ -14,9 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
             return `Available commands:
 projects   - see my projects
 filehost   - visit my file host
-email      - contact me with ur email
+email      - contact me with your email
 discord    - my discord profile
-github     - my GitHub profile
+github     - my github profile
 whoami     - show current user
 clear      - clear terminal 
 cats       - shows my 2 cats`;
@@ -30,7 +30,7 @@ cats       - shows my 2 cats`;
   - game rules for domination (Site)`;
         },
         'filehost': () => {
-            window.open('https://dl.antimatter137.dev', '_blank');
+            window.open('https://files.antimatter137.dev', '_blank');
             return 'Opening file host...';
         },
         'clear': () => {
@@ -264,3 +264,4 @@ function connectLanyard() {
 
 
 connectLanyard();
+
