@@ -16,6 +16,7 @@ projects   - see my projects
 filehost   - visit my file host
 email      - contact me with your email
 discord    - my discord profile
+pgp        - my pgp key
 github     - my github profile
 whoami     - show current user
 clear      - clear terminal 
@@ -53,6 +54,10 @@ cats       - shows my 2 cats`;
         'discord': () => {
             window.open('https://discord.com/users/1202358603940634688', '_blank');
             return 'Opening Discord profile...';
+        },
+         'pgp': () => {
+            window.open('https://antimatter137.dev/pgp.txt', '_blank');
+            return 'Opening my pgp key...';
         },
         'github': () => { 
             window.open('https://github.com/antimatter137', '_blank');
@@ -264,4 +269,5 @@ function connectLanyard() {
 
 
 connectLanyard();
+
 
