@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let commandHistory = [];
     let historyIndex = -1;
     let currentCommand = '';
-    // commands! what others should i add (stop looking at my code!)
+    // commands! what others should i add (stop looking at my code!) its bad, ik
     const commands = {
         'help': () => {
             return `Available commands:
@@ -58,6 +58,9 @@ cats       - shows my 2 cats`;
          'pgp': () => {
             window.open('https://antimatter137.dev/pgp.txt', '_blank');
             return 'Opening my pgp key...';
+        },
+        'fuck': () => {
+            return 'FUCK YOU!';
         },
         'github': () => { 
             window.open('https://github.com/antimatter137', '_blank');
@@ -269,5 +272,6 @@ function connectLanyard() {
 
 
 connectLanyard();
+
 
 
